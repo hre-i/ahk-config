@@ -1,4 +1,4 @@
-# JP->US/Tile/AHK
+# ahk-config / AutoHotkey 設定
 
 ## 目的
 
