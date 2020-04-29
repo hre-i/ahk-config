@@ -33,3 +33,7 @@ F11 & .::Send {Blind}{End}
 F11 & n::Send {Blind}{Insert}
 F11 & m::Send {Blind}{Delete}
 F11 & u::Send {Blind}{AppsKey}
+
+;;;
+
+F11 & z::Send ^{NumpadAdd}
