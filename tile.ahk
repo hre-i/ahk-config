@@ -31,7 +31,7 @@ if (name == "mintty.exe") {
 Return
 
 ;;;; Maximize
-F12 & n:: winTile(-1, "a", "a", 1, 1)
+F12 & n:: winTile(SecondMonitorId, "a", "a", 1, 1)
 
 ;;;; 1/2
 F12 & h:: winTile(-1, "l", "a", .5, 1)
