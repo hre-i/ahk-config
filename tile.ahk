@@ -8,7 +8,7 @@
 global SecondMonitorId
 
 ;;;; Centering / Side
-F12 & Space:: 
+F12 & Space::
 WinGet, name, ProcessName, A
 if (name == "mintty.exe") {
     winTile(-1, "c", "a", 0.8, 1)
@@ -58,10 +58,10 @@ F12 & Up::    winTile(SecondMonitorId, "a", "t", 1, .5)
 F12 & Right:: winTile(SecondMonitorId, "r", "a", .5, 1)
 
 ;;;; 1/4 Second Monitor
-F12 & Home:: winTile(SecondMonitorId, "l", "t", .5, .5)
-F12 & PgUp:: winTile(SecondMonitorId, "r", "t", .5, .5)
-F12 & End::  winTile(SecondMonitorId, "l", "b", .5, .5)
-F12 & PgDn:: winTile(SecondMonitorId, "r", "b", .5, .5)
+F12 & PgUp:: winTile(SecondMonitorId, "l", "t", .5, .5)
+F12 & PgDn:: winTile(SecondMonitorId, "r", "t", .5, .5)
+F12 & Home:: winTile(SecondMonitorId, "l", "b", .5, .5)
+F12 & End::  winTile(SecondMonitorId, "r", "b", .5, .5)
 
 ;;;; 1/3 Second Monitor
 F12 & 8:: winTile(SecondMonitorId, "a", "t", 1, .33)
