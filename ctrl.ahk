@@ -20,3 +20,6 @@ Return
 
 Help:: Send ^h          ; Help        -> Ctrl + h
 NumpadEnter:: Send ^m   ; NumpadEnter -> Ctrl + m
+
+^,::Send {F9}
+^.::Send {F8}
