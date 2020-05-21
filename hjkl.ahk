@@ -37,3 +37,6 @@ F11 & u::Send {Blind}{AppsKey}
 ;;;
 
 F11 & p::Send ^{NumpadAdd}
+F11 & Space::Send {F7}
+F11 & Z::Send {F8}
+F11 & X::Send {F9}

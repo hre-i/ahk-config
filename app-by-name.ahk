@@ -8,7 +8,7 @@
 ;;;;;;;; Applicaton Luncher
 
 ;;;; (A) Explorer
->#a:: #1
+F11 & a:: #1
 ; IfWinExist ahk_class CabinetWClass
 ; {
 ;     WinActivate
@@ -20,7 +20,7 @@
 ; Return
 
 ;;;; (W) Web Browser (Microsoft Edge)
->#w:: #2
+F11 & w:: #2
 ; Process,Exist,msedge.exe
 ; if (ErrorLevel <> 0) {
 ;     WinActivate,ahk_pid %ErrorLevel%
@@ -32,7 +32,7 @@
 ; Return
 
 ;;;; (S) Terminal Emulator (Mintty/Wintty)
->#s:: #3
+F11 & s:: #3
 ; Process,Exist,mintty.exe
 ; if (ErrorLevel <> 0) {
 ;     WinActivate,ahk_pid %ErrorLevel%
@@ -44,7 +44,7 @@
 ; Return
 
 ;;;; (E) Editor (Code)
->#e::
+F11 & e::
 Process,Exist,Code.exe
 if (ErrorLevel <> 0) {
     WinActivate,ahk_pid %ErrorLevel%
@@ -52,7 +52,7 @@ if (ErrorLevel <> 0) {
 Return
 
 ;;;; (D) Document Viewer / Excel
->#d::
+F11 & d::
 Process,Exist,SumatraPDF.exe
 if (ErrorLevel <> 0) {
     WinActivate, ahk_pid %ErrorLevel%
@@ -65,7 +65,7 @@ if (ErrorLevel <> 0) {
 Return
 
 ;;;; (R) IDEA
->#r:: #6
+F11 & r:: #6
 ;; Process,Exist,idea64.exe
 ;; if (ErrorLevel <> 0) {
 ;;     WinActivate,ahk_pid %ErrorLevel%
@@ -77,7 +77,7 @@ Return
 ;; Return
 
 ;;;; (F) Mailer (Outlook)
->#f:: #7
+F11 & f:: #7
 ;; Process,Exist,outlook.exe
 ;; if (ErrorLoevel <> 0) {
 ;;     WinActivate,ahk_pid %ErrorLevel%
@@ -89,7 +89,7 @@ Return
 ;; Return
 
 ;;;; (T) (Microsoft TODO)
->#t:: #8
+F11 & t:: #8
 
 ;;;; (G) (Google Calendar)
->#g:: #9
+F11 & g:: #9
