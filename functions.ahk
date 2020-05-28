@@ -15,11 +15,15 @@ winTile(mid, pW, pH, dW, dH) {
 ;;MsgBox, Monitor Count:`t%MonitorCount%`nPrimary Monitor:`t%MonitorPrimary%
 
     ;; Get Monitor Information
-    If (mid == -1) {
-        SysGet, Primary, MonitorPrimary
+    SysGet, Primary, MonitorPrimary
+    If (mid == 0) {
         SysGet, Mon, MonitorWorkArea, %Primary%
     } Else {
-        SysGet, Mon, MonitorWorkArea, %mid%
+        if (Primary == 1) {
+            SysGet, Mon, MonitorWorkArea, 2
+        } else if (Primary == 2) {
+            SysGet, Mon, MonitorWorkArea, 1
+        }
     }
 
     ;; Get active window id.
