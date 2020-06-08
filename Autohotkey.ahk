@@ -1,6 +1,6 @@
 #UseHook
 
-; #include %A_ScriptDir%\..\OneDrive\Config\ahk
+#include %A_ScriptDir%\..\ahk-config
 #include functions.ahk
 #include win.ahk
 #include workspace.ahk
