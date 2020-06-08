@@ -1,8 +1,8 @@
 rem HHK-JP
 
-copy %~dp0\AutoHotkey.ahk %~dp0\..\..\..\Documents\Autohotkey.ahk
+rem copy %~dp0\AutoHotkey.ahk %~dp0\..\..\..\Documents\Autohotkey.ahk
 
-reg import %~dp0\KEYMAP-HHKJP-US.reg
+reg import %~dp0\KEYMAP-JP-US.reg
 reg import %~dp0\KBD-US.reg
 
 echo off
