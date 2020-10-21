@@ -16,6 +16,8 @@ F11 & 7::Send {Blind}{F7}
 F11 & 8::Send {Blind}{F8}
 F11 & 9::Send {Blind}{F9}
 F11 & 0::Send {Blind}{F10}
+F11 & -::Send {Blind}{F11}
+F11 & +::Send {Blind}{F12}
 
 ;;;; Cursor Move
 
