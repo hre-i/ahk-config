@@ -7,7 +7,7 @@
 
 ;;;; Window Control by Right+Win
 >#m:: WinMaximize,A
-; >#h:: WinMinimize,A
+>#h:: WinMinimize,A
 >#j:: AltTab
 >#k:: ShiftAltTab
 
