@@ -21,11 +21,8 @@ Return
 Help:: Send ^h          ; Help        -> Ctrl + h
 NumpadEnter:: Send ^m   ; NumpadEnter -> Ctrl + m
 
-^F9::
+^,::
 Return
 
-^F8::
+^.::
 Return
-
-^,::Send ^{F9}
-^.::Send ^{F8}
