@@ -44,50 +44,9 @@ if (ErrorLevel <> 0) {
 Return
 
 ;;;; (E) Editor (Code)
-F11 & e::
-Process,Exist,Code.exe
-if (ErrorLevel <> 0) {
-    WinActivate,ahk_pid %ErrorLevel%
-}
-Return
-
-;;;; (D) Mailer
-F11 & d::
-Process,Exist,Sylpheed.exe
-if (ErrorLoevel <> 0) {
-    WinActivate,ahk_pid %ErrorLevel%
-} else {
-    Send,#5
-}
-Return
-
-;;;; (R) IDEA
+F11 & e:: #4
+F11 & d:: #5
 F11 & r:: #6
-;; Process,Exist,idea64.exe
-;; if (ErrorLevel <> 0) {
-;;     WinActivate,ahk_pid %ErrorLevel%
-;; } else {
-;;     Run, "C:\Program Files\JetBrains\IntelliJ IDEA\bin\idea64.exe",,, pid
-;;     WinWait, ahk_pid %pid%
-;;     WinActivate, ahk_pid %pid%
-;; }
-;; Return
-
-;;;; (F) Document Viewer / Excel
 F11 & f:: #7
-;; Process,Exist,SumatraPDF.exe
-;; if (ErrorLevel <> 0) {
-;;     WinActivate, ahk_pid %ErrorLevel%
-;; } else {
-;;     Process,Exist,excel.exe
-;;     if (ErrorLevel <> 0) {
-;;         WinActivate, ahk_pid %ErrorLevel%
-;;     }
-;; }
-;; Return
-
-;;;; (T) (Microsoft TODO)
 F11 & t:: #8
-
-;;;; (G) (Google Calendar)
 F11 & g:: #9
