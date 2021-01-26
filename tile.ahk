@@ -32,6 +32,12 @@ Return
 >!Up::    winTile(1, "a", "t", 1, .5)
 >!Right:: winTile(1, "r", "a", .5, 1)
 
+;;;; 1/2 Third Monitor
+>!+Left::  winTile(2, "l", "a", .5, 1)
+>!+Down::  winTile(2, "a", "b", 1, .5)
+>!+Up::    winTile(2, "a", "t", 1, .5)
+>!+Right:: winTile(2, "r", "a", .5, 1)
+
 ;;;; 1/4
 >!q:: winTile(0, "l", "t", .5, .5)
 >!w:: winTile(0, "r", "t", .5, .5)

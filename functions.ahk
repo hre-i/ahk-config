@@ -20,9 +20,23 @@ winTile(mid, pW, pH, dW, dH) {
         SysGet, Mon, MonitorWorkArea, %Primary%
     } Else {
         if (Primary == 1) {
-            SysGet, Mon, MonitorWorkArea, 2
+            if (mid == 1) {
+                SysGet, Mon, MonitorWorkArea, 2
+            } else {
+                SysGet, Mon, MonitorWorkArea, 3
+            }
         } else if (Primary == 2) {
-            SysGet, Mon, MonitorWorkArea, 1
+            if (mid == 1) {
+                SysGet, Mon, MonitorWorkArea, 1
+            } else {
+                SysGet, Mon, MonitorWorkArea, 3
+            }
+        } else if (Primary == 3) {
+            if (mid == 1) {
+                SysGet, Mon, MonitorWorkArea, 1
+            } else {
+                SysGet, Mon, MonitorWorkArea, 2
+            }
         }
     }
 
