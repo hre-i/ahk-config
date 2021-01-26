@@ -26,3 +26,10 @@ Return
 
 ^.::
 Return
+
+#+::
+Return
+
+;; 拡大鏡ショートカットの無効化
+#=::
+Return
