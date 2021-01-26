@@ -1,3 +1,4 @@
+#SingleInstance
 #UseHook
 
 ;#include %A_ScriptDir%\..\ahk-config
