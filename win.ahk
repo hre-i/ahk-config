@@ -31,3 +31,16 @@ else {
     Send !{F4}
 }
 Return
+
+^w::
+WinGet, name, ProcessName, A
+if (name = "explorer.exe") {
+    WinMinimize,A
+}
+else if (name = "outlook.exe") {
+    WinMinimize,A
+}
+else {
+    Send ^w
+}
+Return

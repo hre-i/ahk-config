@@ -33,9 +33,13 @@ SC079 & .::Send {Blind}{End}
 SC079 & n::Send {Blind}{Insert}
 SC079 & m::Send {Blind}{Delete}
 SC079 & u::Send {Blind}{AppsKey}
+;SC079 & Tab::Send {CapsLocK}
 
 ; Ctrl+NumpadAdd は Exploer の幅調整で使う
 SC079 & p::Send {Blind}{NumpadAdd}
+
+; 変換単体で Backspace
+; SC079::Send {Backspace}
 
 ;;;;
 ;SC079::Send {vk1Dsc079} ;; 変換

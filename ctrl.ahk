@@ -7,13 +7,7 @@
 
 ^m::Send,{Enter}        ; Ctrl + m -> Enter
 
-LControl & h::
-If (WinActive("ahk_class mintty")) {
-    Send ^h
-} Else {
-    Send {Backspace}    ; Ctrl + h -> Backspace
-}
-Return
+^h::Send,{Backspace}    ; Ctrl + h -> Backspace
 
 ;; 拡大鏡ショートカットの無効化
 ;#=::
