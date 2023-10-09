@@ -5,7 +5,7 @@
 ; < Use the left key of the pair.
 ; > Use the right key of the pair.
 
-SC079 & 1::Send {Blind}{F1}
+SC079 & 1::Send !{F1}
 SC079 & 2::Send {Blind}{F2}
 SC079 & 3::Send {Blind}{F3}
 SC079 & 4::Send {Blind}{F4}
@@ -33,7 +33,6 @@ SC079 & .::Send {Blind}{End}
 SC079 & n::Send {Blind}{Insert}
 SC079 & m::Send {Blind}{Delete}
 SC079 & u::Send {Blind}{AppsKey}
-;SC079 & Tab::Send {CapsLocK}
 
 ; Ctrl+NumpadAdd は Exploer の幅調整で使う
 SC079 & p::Send {Blind}{NumpadAdd}
@@ -49,3 +48,7 @@ SC07B::                 ;; 無変換 を押したら Esc も押したことに�
 Send {vk1Dsc07B}
 Send {Esc}
 Return
+
+SC079 & Tab::Send +{Tab}
+SC079 & z::Send +^{Tab}
+SC079 & x::Send ^{Tab}

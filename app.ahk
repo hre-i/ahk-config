@@ -6,55 +6,34 @@
 ; > Use the right key of the pair.
 ;;;;
 
-;RWin  & a::^#1
 SC079 & a::
 WinActivate,ahk_class CabinetWClass
 Return
 
-;RWin  & w::^#2
-SC079 & w::^#2
+SC079 & w::^#2 ; Web browser (edge)
+SC079 & s::^#3 ; Terminal (WezTerm)
+SC079 & r::^#4 ; Mail (Outlook)
+SC079 & t::^#5 ; Teams
+SC079 & v::^#6 ; ToDo
+SC079 & c::^#7 ; OneNote
+SC079 & e::^#8 ; App1
+SC079 & d::^#9 ; App2
+SC079 & f::^#0 ; App3
 
-;RWin  & s::^#3
-SC079 & s::
-Process,Exist,wezterm-gui.exe
-if (ErrorLevel <> 0) {
-    WinActivate,ahk_pid %ErrorLevel%
-} else {
-    Send,^#3
-}
-Return
+RWin & a::^#1
+RWin & w::Return
+RWin & s::Return
+RWin & e::Return
+RWin & d::Return
+RWin & r::Return
+RWin & f::Return
+RWin & t::Return
+RWin & g::Return
 
-;RWin  & r::^#4
-SC079 & r::
-Process,Exist,thunderbird.exe
-if (ErrorLevel <> 0) {
-    WinActivate,ahk_pid %ErrorLevel%
-} else {
-    Send,^#4
-}
-Return
+LWin & f::Return ; Ignore feedback
 
-;RWin  & c::^#5
-SC079 & c::^#5
-
-;RWin  & e::^#6
-SC079 & e::^#6
-
-;RWin  & t::^#7
-SC079 & t::^#7
-
-;RWin  & d::^#8
-SC079 & d::
-Process,Exist,vcxsrv.exe
-if (ErrorLevel <> 0) {
-    WinActivate,ahk_pid %ErrorLevel%
-} else {
-    Send,^#8
-}
-Return
-
-;RWin  & f::^#9
-SC079 & f::^#9
-
-;RWin  & g::^#0
-SC079 & g::^#0
+#IfWinActive ahk_exe wezterm-gui.exe
+RWin & c::Send,+^c
+RWin & x::Send,+^x
+RWin & v::Send,+^v
+#IfWinActive

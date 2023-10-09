@@ -1,6 +1,6 @@
 rem HHK-JP
 
-copy %~dp0\..\AutoHotkeyUS.ahk %HOMEDRIVE%%HOMEPATH%\Documents\Autohotkey.ahk
+copy %~dp0\..\Autohotkey.ahk %HOMEDRIVE%%HOMEPATH%\Documents\Autohotkey.ahk
 
 reg import %~dp0\KEYMAP-HHKJP-US.reg
 reg import %~dp0\KBD-US.reg

@@ -5,7 +5,8 @@
 ; < Use the left key of the pair.
 ; > Use the right key of the pair.
 
-^m::Send,{Enter}        ; Ctrl + m -> Enter
+;^m::Send,{CtrlUp}{Enter}        ; Ctrl + m -> Enter
+^m::Send,{Enter}
 
 ^h::Send,{Backspace}    ; Ctrl + h -> Backspace
 
