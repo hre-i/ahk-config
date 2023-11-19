@@ -6,21 +6,21 @@
 ; > Use the right key of the pair.
 ;;;;
 
-SC079 & a::
+SC079 & a::     ; Explorer
 WinActivate,ahk_class CabinetWClass
 Return
 
 SC079 & w::^#2 ; Web browser (edge)
 SC079 & s::^#3 ; Terminal (WezTerm)
-SC079 & r::^#4 ; Mail (Outlook)
+SC079 & r::^#4 ; Mail (Thunderbird)
 SC079 & t::^#5 ; Teams
 SC079 & v::^#6 ; ToDo
-SC079 & c::^#7 ; OneNote
+SC079 & c::^#7 ; Calendar (Outlook)
 SC079 & e::^#8 ; App1
 SC079 & d::^#9 ; App2
 SC079 & f::^#0 ; App3
 
-RWin & a::^#1
+RWin & a::^#1   ; Launch explorer
 RWin & w::Return
 RWin & s::Return
 RWin & e::Return

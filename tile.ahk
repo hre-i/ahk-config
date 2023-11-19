@@ -5,25 +5,32 @@
 ; < Use the left key of the pair.
 ; > Use the right key of the pair.
 
-;;;; Centering / Side
+;;;; Centering
+>!m:: winTile(0, "c", "a", 0.6, 1)
+
 >!Space::
-WinGet, name, ProcessName, A
-if (name == "wezterm-gui.exe") {
-    winTile(0, "c", "a", 0.6, 1)
-} else {
-    winTile(0, "l", "a", 1, 1)
-}
+winTile(0, "c", "a", 1, 1)
+Send,#{Up}
 Return
 
->!m:: winTile(0, "l", "a", 1, 1)
->!Enter:: winTile(1, "l", "a", 1, 1)
->!+Enter:: winTile(2, "l", "a", 1, 1)
+>!Enter::
+winTile(1, "l", "a", 1, 1)
+Send,#{Up}
+Return
 
 ;;;; 1/2
->!h:: winTile(0, "l", "a", .5, 1)
->!j:: winTile(0, "a", "b", 1, .5)
+>!h::
+winTile(0, "l", "a", .5, 1)
+Send,#{Left}
+Return
+
+>!l::
+winTile(0, "r", "a", .5, 1)
+Send,#{Right}
+Return
+
 >!k:: winTile(0, "a", "t", 1, .5)
->!l:: winTile(0, "r", "a", .5, 1)
+>!j:: winTile(0, "a", "b", 1, .5)
 
 ;;;; 1/2 Second Monitor
 >!Left::  winTile(1, "l", "a", .5, 1)
@@ -53,10 +60,10 @@ Return
 >!+z:: winTile(1, "l", "b", .5, .5)
 >!+x:: winTile(1, "r", "b", .5, .5)
 
-;;;; 6:4
->!1:: winTile(0, "l", "a", .30, 1)
->!2:: winTile(0, "l", "a", .70, 1)
->!3:: winTile(0, "r", "a", .70, 1)
+;;;; 7:3
+>!1:: winTile(0, "l", "a", .70, 1)
+>!2:: winTile(0, "r", "a", .70, 1)
+>!3:: winTile(0, "l", "a", .30, 1)
 >!4:: winTile(0, "r", "a", .30, 1)
 >!+1:: winTile(1, "l", "a", .30, 1)
 >!+2:: winTile(1, "r", "a", .70, 1)
