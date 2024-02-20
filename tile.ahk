@@ -6,10 +6,13 @@
 ; > Use the right key of the pair.
 
 ;;;; Centering
->!m:: winTile(0, "c", "a", 0.6, 1)
+>!m::
+winTile(0, "c", "a", 1, 1)
+Send,#{Up}
+Return
 
 >!Space::
-winTile(0, "c", "a", 1, 1)
+winTile(0, "c", "a", 0.6, 1)
 Send,#{Up}
 Return
 
@@ -21,12 +24,12 @@ Return
 ;;;; 1/2
 >!h::
 winTile(0, "l", "a", .5, 1)
-Send,#{Left}
+;Send,#{Left}
 Return
 
 >!l::
 winTile(0, "r", "a", .5, 1)
-Send,#{Right}
+;Send,#{Right}
 Return
 
 >!k:: winTile(0, "a", "t", 1, .5)
