@@ -13,7 +13,6 @@ Return
 
 >!Space::
 winTile(0, "c", "a", 0.6, 1)
-Send,#{Up}
 Return
 
 >!Enter::
